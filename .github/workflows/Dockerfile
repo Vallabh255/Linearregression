@@ -1,5 +1,5 @@
-FROM eclipse-temurin:17
+FROM python:3.9
 WORKDIR /app
 COPY . .
-RUN javac Hello.java
-CMD ["java","Hello"]
+RUN pip install -r requirements.txt
+CMD ["python","app.py"]
