@@ -11,7 +11,7 @@ jobs:
       - name: Install Dependencies
         run: pip install -r requirements.txt
 
-      - name: Run Tests
+      - name: Run Test
         run: pytest
 
       - name: Build Docker
