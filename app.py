@@ -1,1 +1,1 @@
-print("KMEC DEPLOYING THE PROJECT")
+print("DevOps Pipeline Debug Success")
