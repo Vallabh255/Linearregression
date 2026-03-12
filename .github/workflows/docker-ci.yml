@@ -1,7 +1,5 @@
-name: DevOps Pipeline
-
+name: ML CI Pipeline
 on: push
-
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -9,6 +7,11 @@ jobs:
     steps:
       - name: Checkout Code
         uses: actions/checkout@v3
+        
+      - name: Install Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
 
       - name: Install dependencies
         run: pip install -r requirements.txt
